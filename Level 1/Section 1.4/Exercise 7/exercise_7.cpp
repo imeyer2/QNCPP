@@ -1,6 +1,6 @@
 /*
     Author: Ian Meyer
-    Contents: Function to count number of times a digit between 1-4 is entered in console
+    Contents: Function to count number of times a digit between 0-4 is entered in console and 3 is different
 */  
 #include<stdio.h>
 

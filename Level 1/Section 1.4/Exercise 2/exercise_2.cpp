@@ -1,3 +1,8 @@
+/*
+    Author: Ian Meyer
+    Contents: Count letters, newlines, and words given an input
+*/  
+
 #include<stdio.h>
 
 

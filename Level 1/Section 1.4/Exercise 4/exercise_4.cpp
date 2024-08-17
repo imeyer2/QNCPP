@@ -1,3 +1,7 @@
+/*
+    Author: Ian Meyer
+    Contents: Fahrenheit to Celcius conversion
+*/  
 #include<stdio.h>
 
 

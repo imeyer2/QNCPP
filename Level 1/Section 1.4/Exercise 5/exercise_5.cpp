@@ -1,3 +1,7 @@
+/*
+    Author: Ian Meyer
+    Contents: Table with Celcius and Fahrenheit conversion
+*/  
 #include<stdio.h>
 
 

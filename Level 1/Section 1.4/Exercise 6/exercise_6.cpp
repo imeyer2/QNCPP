@@ -1,3 +1,7 @@
+/*
+    Author: Ian Meyer
+    Contents: Function to count digits 0-4 with switch
+*/  
 #include<stdio.h>
 
 
