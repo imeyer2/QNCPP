@@ -1,3 +1,8 @@
+/*
+    Author: Ian Meyer
+    Contents: multiplication by 2 (efficient)
+*/  
+
 #include<stdio.h>
 
 

@@ -1,4 +1,7 @@
-
+/*
+    Author: Ian Meyer
+    Contents: Predicting what will be outputted with operators
+*/  
 #include <stdio.h>
 int main()
 {

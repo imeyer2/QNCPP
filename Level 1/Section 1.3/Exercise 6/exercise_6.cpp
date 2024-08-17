@@ -1,3 +1,7 @@
+/*
+    Author: Ian Meyer
+    Contents: Shift by adding 0's to end of a number
+*/  
 #include<stdio.h>
 
 

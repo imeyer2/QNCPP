@@ -1,3 +1,8 @@
+/*
+    Author: Ian Meyer
+    Contents: Hello World type program
+*/  
+
 #include<stdio.h>
 
 int main(void){

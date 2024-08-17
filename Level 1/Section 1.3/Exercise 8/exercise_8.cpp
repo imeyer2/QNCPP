@@ -1,4 +1,7 @@
-/* Assignment operators */
+/*
+    Author: Ian Meyer
+    Contents: Assignment operator predictions
+*/  
 
 #include <stdio.h>
 

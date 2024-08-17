@@ -1,3 +1,8 @@
+/*
+    Author: Ian Meyer
+    Contents: Example of prefix and postfix operator differences
+*/  
+
 #include<stdio.h>
 
 int main(void){

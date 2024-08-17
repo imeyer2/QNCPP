@@ -1,3 +1,7 @@
+/*
+    Author: Ian Meyer
+    Contents: Input and output for area of a triangle
+*/  
 #include<stdio.h>
 
 int main(void){

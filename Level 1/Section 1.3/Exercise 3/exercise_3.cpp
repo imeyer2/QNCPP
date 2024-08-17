@@ -1,3 +1,8 @@
+/*
+    Author: Ian Meyer
+    Contents: Predicting operators
+*/  
+
 /* Operators */
 #include <stdio.h>
 

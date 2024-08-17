@@ -1,3 +1,7 @@
+/*
+    Author: Ian Meyer
+    Contents: Ternary operator usage with 0 or 1 for logic
+*/  
 #include<stdio.h>
 
 int main(void){
