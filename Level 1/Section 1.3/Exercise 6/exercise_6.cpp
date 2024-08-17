@@ -11,4 +11,5 @@ int main(void){
     ans = 100 * user_input;
 
     printf("Your shifted number is %f\n", ans);
+    printf("A logical shift was performed\n");
 }

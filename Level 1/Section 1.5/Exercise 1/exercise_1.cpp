@@ -1,5 +1,10 @@
+/*
+    Author: Ian Meyer
+    Contents: Implementation of minus function
+*/  
 #include<stdio.h>
 
+float minus(float first, float second);
 
 int main(void){
     float first;
@@ -10,6 +15,13 @@ int main(void){
     printf("Enter the second number: ");
     scanf("%f", &second);
 
-    printf("The difference is %f\n", first-second);
+    printf("The difference is %f\n", minus(first, second));
     
+    return 0;
 }
+
+
+
+float minus(float first, float second) {
+    return first-second;
+};

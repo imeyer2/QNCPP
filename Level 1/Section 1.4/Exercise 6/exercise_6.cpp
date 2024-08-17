@@ -10,7 +10,7 @@ int main(void){
     int four_counter = 0;
 
     char c;
-
+    /*Get the characters that the user typed and corresponding logic*/
     while ((c = getchar()) != EOF) {
         switch (c) {
             case '0':

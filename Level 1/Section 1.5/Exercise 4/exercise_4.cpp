@@ -1,3 +1,8 @@
+/*
+    Author: Ian Meyer
+    Contents: Recursive print number function and main to test
+*/
+
 #include <stdio.h>
 
 void printnumber(int input) {
@@ -6,7 +11,7 @@ void printnumber(int input) {
         putchar('-');
         input = -input;
     }
-//using /
+    //using / to determine if the input is less than 10
     if (input/10 != 0) {
         printnumber(input / 10);
     }

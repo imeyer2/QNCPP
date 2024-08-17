@@ -1,3 +1,8 @@
+/*
+    Author: Ian Meyer
+    Contents: Implementation of recursive factorial
+*/  
+
 #include<stdio.h>
 
 int factorial(int n){
