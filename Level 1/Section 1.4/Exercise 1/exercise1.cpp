@@ -12,7 +12,7 @@ int main(void){
     int num_newlines = 0;
 
     int last_char_was_alphanum = 0;
-
+    printf("Enter stuff:\n");
     char c;
     while ((c = getchar()) != EOF){
         if (c == '\n') {

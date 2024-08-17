@@ -13,5 +13,5 @@ int main(void){
     printf("Please enter the height of the triangle: ");
     scanf("%f", &height);
 
-    printf("The area of the triangle is %.2f\n", base*height);
+    printf("The area of the triangle is %.2f\n", base*height*0.5);
 }

@@ -12,6 +12,7 @@ int main(void){
     int two_counter = 0;
     int three_counter = 0;
     int four_counter = 0;
+    printf("Type anything:\n");
 
     char c;
     /*Get the characters that the user typed and corresponding logic*/
