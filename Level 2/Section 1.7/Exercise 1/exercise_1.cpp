@@ -1,13 +1,9 @@
-
+/*
+    Author: Ian Meyer
+    Description: Pass by reference
+*/
 #include<stdio.h>
-
-void Swap(int* i, int* j){
-    //This function takes pointers as input
-
-    int temp = *i;
-    *i = *j;
-    *j = temp;
-}
+#include "Swap.hpp"
 
 
 int main(void){

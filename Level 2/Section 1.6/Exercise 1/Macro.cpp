@@ -1,6 +1,11 @@
+/*
+    Author: Ian Meyer
+    Description: Testint out Macros
+*/
+
 #include<stdio.h>
 
-#include "Defs.h"
+#include "Defs.hpp"
 
 int main(void){
     int a = 4;
