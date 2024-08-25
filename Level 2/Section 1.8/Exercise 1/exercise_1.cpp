@@ -1,3 +1,9 @@
+/*
+    Author: Ian Meyer
+    Description: Using structs and pass by reference
+*/
+
+
 #include<stdio.h>
 
 

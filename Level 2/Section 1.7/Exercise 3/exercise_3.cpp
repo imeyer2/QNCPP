@@ -1,4 +1,7 @@
-/* Predict what will be printed on the screen */
+/*
+    Author: Ian Meyer
+    Description: Predict what will be on the screen
+*/
 
 #include <stdio.h>
 

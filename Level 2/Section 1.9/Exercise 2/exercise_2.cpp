@@ -1,3 +1,8 @@
+/*
+    Author: Ian Meyer
+    Description: Writing letters to a file
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 

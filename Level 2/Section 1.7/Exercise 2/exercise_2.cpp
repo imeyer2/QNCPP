@@ -1,4 +1,7 @@
-/* Calculate the length of a string */
+/*
+    Author: Ian Meyer
+    Description: Calculate the length of a string
+*/
 
 #include <stdio.h>
 

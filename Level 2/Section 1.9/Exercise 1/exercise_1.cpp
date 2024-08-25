@@ -1,3 +1,9 @@
+/*
+    Author: Ian Meyer
+    Description: Writing letters to the console as the user enters them
+*/
+
+
 #include<stdio.h>
 #include<stdlib.h>
 
