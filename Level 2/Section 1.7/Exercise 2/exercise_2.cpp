@@ -32,8 +32,9 @@ printf("\n\nString length is %d\n", Length(string));
 return 0;
 }
 
-/* Implement the Length() function here */
+// Implement the Length() function here 
 int Length(char str[]){
+    //Calcualte the length of the string
 
     // Arrays are pointers, so let's access the first element with a pointer
     char* start = str;

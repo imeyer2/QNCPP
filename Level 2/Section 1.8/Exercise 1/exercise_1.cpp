@@ -29,7 +29,7 @@ int main(void){
 
 //NOW we define print properly
 void Print(struct Article* my_article){
-    //Print the attributes
+    //Print the attributes of struct
     printf("The number is %d\n", my_article->number);
     printf("The quantity is %d\n", my_article->quantity);
     printf("The description is %s\n", my_article->description);
