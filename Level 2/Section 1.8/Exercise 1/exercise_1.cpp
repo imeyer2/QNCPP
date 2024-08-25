@@ -6,7 +6,7 @@ struct Article
 {
     int number;
     int quantity;
-    char description[21];
+    char description[20];
 };
 
 //We need a funciton prototype to tell main that Print exists

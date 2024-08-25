@@ -15,13 +15,13 @@ int main(void){
     
     printf("ENTER LETTERS:\n");
     c = getchar();
-    while (c != EOF){ //Break out when CTRL+D is hit. char and int comparision??
+    while (c != 1){ //Break out when CTRL+A is hit. char and int comparision??
         if (c == '\n'){
             //Print the entered letters
-            printf("Your characters were %s\n", entered);
+            printf("Your characters were: \n%s\n", entered);
 
             //clear the buffer
-            for (int j = 0; j < sizeof(entered)/sizeof(entered[0]); j++){
+            for (int j = 0; j < sizeof(*entered)/sizeof(entered[0]); j++){
                 entered[j] = '\0';
             }
             //Reset index
@@ -42,6 +42,6 @@ int main(void){
     }
 
     free(entered);
-    printf("CTRL + D is a correct ending\n");
+    printf("CTRL + A is a correct ending\n");
     return 0;
 }

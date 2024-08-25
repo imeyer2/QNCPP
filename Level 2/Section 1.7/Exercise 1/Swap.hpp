@@ -3,5 +3,5 @@
     Description: Header file for Swap function
 */
 
-// Prototype
+// Prototype. Defined in Swap.cpp
 void Swap(int* i, int* j);

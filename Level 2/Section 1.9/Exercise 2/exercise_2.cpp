@@ -26,16 +26,16 @@ int main(void){
     
     printf("ENTER LETTERS:\n");
     c = getchar();
-    while (c != EOF){ //Break out when CTRL+D is hit. char and int comparision??
+    while (c != 1){ //Break out when CTRL+D is hit. char and int comparision??
         if (c == '\n'){
             //Print the entered letters
             printf("Your characters were %s\n", entered);
             printf("WRITING YOUR LETTERS TO FILE\n");
 
-            fprintf(file_pointer, entered);
+            fprintf(file_pointer, "%s", entered);
 
             //clear the buffer
-            for (int j = 0; j < sizeof(entered)/sizeof(entered[0]); j++){
+            for (int j = 0; j < sizeof(*entered)/sizeof(entered[0]); j++){
                 entered[j] = '\0';
             }
             //Reset index

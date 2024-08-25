@@ -1,6 +1,6 @@
 /*
     Author: Ian Meyer
-    Description: Testint out Macros
+    Description: Testing out Macros
 */
 
 #include<stdio.h>
@@ -15,7 +15,7 @@ int main(void){
     PRINT2(b);
 
 
-    printf("%d", MAX2(a,b));
+    printf("%d\n\n", MAX2(a,b));
 
 
 
