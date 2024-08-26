@@ -1,3 +1,8 @@
+/*
+    Author: Ian Meyer
+    Description: Header file for the point class
+*/
+
 #ifndef POINT_H
 #define POINT_H
 

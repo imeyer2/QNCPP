@@ -1,3 +1,8 @@
+/*
+    Author: Ian Meyer
+    Description: Implementation of the Circle class
+*/
+
 #include "circle.hpp"
 #include "point.hpp" //Ohhhh I see why we need the preprocessor directives now to avoid multiple inclusion....
 #include "line.hpp"

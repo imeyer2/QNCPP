@@ -1,3 +1,8 @@
+/*
+    Author: Ian Meyer
+    Description: Header file for the circle class
+*/
+
 #ifndef CIRCLE_H
 #define CIRCLE_H
 

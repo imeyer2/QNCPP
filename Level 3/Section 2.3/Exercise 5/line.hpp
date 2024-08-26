@@ -1,3 +1,8 @@
+/*
+    Author: Ian Meyer
+    Description: Header file for the line class
+*/
+
 #ifndef LINE_H
 #define LINE_H
 

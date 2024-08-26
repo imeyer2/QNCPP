@@ -1,3 +1,8 @@
+/*
+    Author: Ian Meyer
+    Description: Implementation of the point class
+*/
+
 // This file will only contain the implementation of the Point class
 #include "point.hpp"
 #include <iostream>

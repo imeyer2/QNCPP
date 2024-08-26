@@ -1,3 +1,8 @@
+/*
+    Author: Ian Meyer
+    Description: Implementation of the line class
+*/
+
 #include "line.hpp"
 #include <iostream>
 #include <sstream>

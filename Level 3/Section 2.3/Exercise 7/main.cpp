@@ -1,3 +1,8 @@
+/*
+    Author: Ian Meyer
+    Description: Testing the classes
+*/
+
 #include "point.hpp"
 #include "line.hpp"
 #include "circle.hpp"
