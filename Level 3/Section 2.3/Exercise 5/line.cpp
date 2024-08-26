@@ -34,11 +34,11 @@ Point Line::P2() {
 };
 
 //Setters
-Point Line::P1(Point npt1) {
+void Line::P1(Point npt1) {
     pt1 = npt1; //Will this work? Or do we need to use the Point copy constructor?
 };
 
-Point Line::P2(Point npt2) {
+void Line::P2(Point npt2) {
     pt2 = npt2;
 };
 

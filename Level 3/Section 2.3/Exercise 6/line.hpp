@@ -20,8 +20,8 @@ public:
 
 
     //Setters
-    Point P1(Point npt1);
-    Point P2(Point npt2);
+    void P1(Point npt1);
+    void P2(Point npt2);
 
     //ToString
     std::string ToString() const; //Note can be constant

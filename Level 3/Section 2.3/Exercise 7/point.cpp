@@ -33,22 +33,24 @@ Point::~Point() {
     // std::cout << "Released" << std::endl;
 }
 
-//Don't forget to put the return type
-inline float Point::X() const { //const comes after the function name
-    return x;
-};
 
-inline float Point::Y() const{
-    return Point::y;
-};
+// We comment this out because they are all inline functions so they are defined in the header file
+// //Don't forget to put the return type
+// inline float Point::X() const { //const comes after the function name
+//     return x;
+// };
 
-inline void Point::X(float x) {
-    Point::x = x;
-}
+// inline float Point::Y() const{
+//     return Point::y;
+// };
 
-inline void Point::Y(float y) {
-    Point::y = y;
-}
+// inline void Point::X(float x) {
+//     Point::x = x;
+// }
+
+// inline void Point::Y(float y) {
+//     Point::y = y;
+// }
 
 
 std::string Point::ToString() const{
