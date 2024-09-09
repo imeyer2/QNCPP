@@ -17,7 +17,7 @@ public:
     //Constructors
     Line();
     Line(Point npt1, Point npt2);
-    Line(Line& ln); //Remember to use call by reference
+    Line(const Line& ln); //Remember to use call by reference
 
     //Getters
     Point P1(); //Both can be constant

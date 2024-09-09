@@ -46,7 +46,10 @@ int main(void){
     pt3.SetX(third_x);
     pt3.SetY(thrid_y);
 
+    Point copypt(pt);
+
     std::cout << "Your first point is " << pt.ToString() << std::endl;
+    std::cout << "Copy of the first point is: " << copypt.ToString() << std::endl;
 
     std::cout << "The x value is " << pt.GetX() << std::endl;
 

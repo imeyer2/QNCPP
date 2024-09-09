@@ -1,3 +1,8 @@
+/*
+    Author: Ian Meyer
+    Description: Implementation of the Array class
+*/
+
 #include "array.hpp"
 #include "point.hpp"
 

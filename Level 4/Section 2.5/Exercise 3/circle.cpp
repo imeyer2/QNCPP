@@ -91,6 +91,9 @@ Circle& Circle::operator=(const Circle& source){
 
 Circle::~Circle() {
     std::cout << "Destroying the circle :(" << std::endl;
+
+    //Destorying the point associated with the circle
+    center_point.~Point();
 };
 
 

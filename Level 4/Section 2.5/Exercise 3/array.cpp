@@ -50,6 +50,7 @@ Point& Array::operator[](int index) {
     return GetElement(index);
 }
 
+//We need this and the const GetElement to differentiate between getting an element for use later, or modifying the element in place in the array
 const Point& Array::operator[](int index) const {
     return GetElement(index);
 }
@@ -62,14 +63,15 @@ Array::~Array() {
 
 
 
-
-
 int Array::Size() {
     return array_size;
 }
 
 void Array::SetElement(int i, Point pt) {
-    m_data[i] = pt; //Delegation of copy with the point = operator
+    if (i>= 0 && i < array_size){
+        m_data[i] = pt; //Delegation of copy with the point = operator
+    }
+    //Else do nothing
 };
 
 Point& Array::GetElement(int i) {
@@ -80,11 +82,12 @@ Point& Array::GetElement(int i) {
 }
 
 
+//We need this and the const operator [] to differentiate between getting an element for use later, or modifying the element in place in the array
 const Point& Array::GetElement(int i) const {
     if (i >= 0 && i < array_size) {
         return m_data[i];
     }
-    return m_data[0]; // Return the first element if out of bounds
+    return m_data[0]; 
 }
 
 

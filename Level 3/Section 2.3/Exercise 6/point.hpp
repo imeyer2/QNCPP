@@ -13,7 +13,7 @@ class Point {
 public:
     Point(); //Default Constructor
     Point(float x, float y); //Constructor with parameters
-    Point(Point& pt); //Copy constructor
+    Point(const Point& pt); //Copy constructor
 
     //Getter functions
     float X() const; //const comes after the function

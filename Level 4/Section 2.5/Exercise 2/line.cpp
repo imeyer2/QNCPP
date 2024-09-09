@@ -80,6 +80,11 @@ Line& Line::operator=(const Line& source) {
 //Destructor
 Line::~Line() {
     std::cout << "Object destoryed." << std::endl;
+
+    //Make sure to destory the objects made in this class.
+    pt1.~Point();
+    pt2.~Point();
+
 }
 
 

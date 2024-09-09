@@ -1,6 +1,6 @@
 /*
     Author: Ian Meyer
-    Description: Testing the new operators
+    Description: Testing the << operator for Point
 */
 
 #include "point.hpp"

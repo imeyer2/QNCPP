@@ -25,7 +25,7 @@ Point::Point(float x, float y) {
 };
 
 //Copy constructor
-Point::Point(Point& pt) {
+Point::Point(const Point& pt) {
     //x and y have already been declared by pointer constructor in private class
     std::cout << "Copy constructor!" << std::endl;
     x = pt.x;
@@ -49,16 +49,16 @@ Point::~Point() {
 //     return Point::y;
 // };
 
-// inline void Point::X(float x) {
-//     Point::x = x;
-// }
+inline void Point::X(float x) {
+    Point::x = x;
+}
 
-// inline void Point::Y(float y) {
-//     Point::y = y;
-// }
+inline void Point::Y(float y) {
+    Point::y = y;
+}
 
 
-std::string Point::ToString() const{
+std::string Point::ToString() const {
     std::stringstream ss; //Looked up documentation for stringstream
     ss << "Point(" << X() << ", " << Y() << ")";
     return ss.str(); //Return the string
@@ -75,3 +75,4 @@ double Point::Distance(const Point& p) const{
     // p.x = 3;  //Vscode gives the error, "expression must be a modifiable l-value"
     return std::sqrt(std::pow(Point::x - p.x,2) + std::pow(Point::y - p.y,2));
 };
+// Make the setters and getters of the Point class inline functions. Use normal inline (outside the class declaration) for the getters and default inline (inside the class declaration) for the setters. Note that the implementation of the normal inline functions must be in the header file; else they will not be inlined.

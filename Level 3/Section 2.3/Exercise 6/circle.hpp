@@ -17,7 +17,7 @@ public:
     //Constructors
     Circle();
     Circle(Point center, float new_radius);
-    Circle(Circle& circ);
+    Circle(const Circle& circ);
 
 
     //Getters

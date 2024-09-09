@@ -38,7 +38,7 @@ public:
     int Size();
     void SetElement(int i, Point pt);
     Point& GetElement(int i); //Returns the element by reference
-    const Point& Array::GetElement(int i) const;
+    const Point& GetElement(int i) const;
 
 };
 

@@ -13,24 +13,17 @@ class Point {
 public:
     Point(); //Default Constructor
     Point(float x, float y); //Constructor with parameters
-    Point(Point& pt); //Copy constructor
+    Point(const Point& pt); //Copy constructor
 
-    //Don't forget to put the return type
-    inline float X() const { //const comes after the function name
-        return x;
-    };
+    //Normal inline that is defined in the header file
+    inline float X(void) const { return x; };
 
-    inline float Y() const{
-        return Point::y;
-    };
+    inline float Y(void) const { return y; };
 
-    inline void X(float x) {
-        Point::x = x;
-    }
 
-    inline void Y(float y) {
-        Point::y = y;
-    }
+    //Inline that is defined in the source file
+    inline void X(float x);
+    inline void Y(float y);
 
 
     //ToString

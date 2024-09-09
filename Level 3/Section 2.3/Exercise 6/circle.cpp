@@ -32,7 +32,7 @@ Circle::Circle(Point center, float radius) {
 //Copy constructor
 // apparently we can do 
 // Circle::Circle(const Circle&) = default;
-Circle::Circle(Circle& circ) {
+Circle::Circle(const Circle& circ) {
     m_radius = circ.m_radius;
     center_point = circ.center_point;
 };

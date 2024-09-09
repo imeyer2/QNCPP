@@ -1,14 +1,16 @@
 /*
     Author: Ian Meyer
-    Description: Function Overloading in a class
+    Description: Testing line class
 */
 
-#include "point.hpp"
+//Inclusions
+#include "line.hpp"
 #include <iostream>
+#include "point.hpp"
 
 
-// NOTE: I only renmaed the X and Distance functions, intentionally leaving out the setter and getter of the y coordinate 
 int main(void){
+    // User will input these variables for use in the line
     float user_x;
     float user_y;
 
@@ -38,9 +40,9 @@ int main(void){
     pt.X(user_x);
     pt.Y(user_y);
 
-    Point pt2;
-    pt2.X(second_x);
-    pt2.Y(second_y);
+    Point pt2(second_x, second_y);
+
+    Line line1(pt, pt2);
 
     Point pt3;
     pt3.X(third_x);
@@ -58,8 +60,12 @@ int main(void){
 
     std::cout << "The distance between Point2 and Point3 is: " << pt2.Distance(pt3) << std::endl; // This creates a new Point class upon calling!!
     
+    std::cout << "Our line defined by points 1 and 2 is: " << line1.ToString() << " with endpoints " << line1.P1().ToString() << " and " << line1.P2().ToString() << " and length " << line1.Length() << std::endl;
+
+    Line line2(line1);
+
+    std::cout << "Our copy line defined by points 1 and 2 is: " << line2.ToString() << " with endpoints " << line2.P1().ToString() << " and " << line2.P2().ToString() << " and length " << line2.Length() << std::endl;
+
 
     return 0;
 }
-
-// Constructor message is printed 3 times, but destructor message is printed 4 times

@@ -23,7 +23,7 @@ Line::Line(Point npt1, Point npt2) {
 };
 
 //Copy constructor
-Line::Line(Line& ln) {
+Line::Line(const Line& ln) {
     pt1 = ln.pt1;
     pt2 = ln.pt2;
 };

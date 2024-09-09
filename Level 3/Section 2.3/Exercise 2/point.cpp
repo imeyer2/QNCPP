@@ -18,7 +18,7 @@ Point::Point() {
 };
 
 //Copy constructor
-Point::Point(Point& pt) {
+Point::Point(const Point& pt) {
     //x and y have already been declared by pointer constructor in private class
     std::cout << "Copy constructor!" << std::endl;
     x = pt.x;

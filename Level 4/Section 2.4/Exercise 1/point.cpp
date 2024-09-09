@@ -53,14 +53,15 @@ Point Point::operator + (const Point& p) const {
 
 //Equally compare operator
 bool Point::operator == (const Point& p) const {
-    if (x == p.x && y == p.y) 
-        return true;
-    else
-        return false;
+    return (x == p.x && y == p.y);
 };
 
 //Assignment operator
 Point& Point::operator = (const Point& source) {
+    if (this == &source) { //If the object that runs this method is the same as the one passed through then just return this object
+        return *this;
+    }
+    
     //Use the setters and getters. Note: we can do this because we tell the compiler which one is const and which one isn't in the .hpp file and here
     X(source.X());
     Y(source.Y());

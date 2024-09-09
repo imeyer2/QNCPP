@@ -12,7 +12,7 @@
 class Point {
 public:
     Point(); //Default Constructor
-    Point(Point& pt); //Copy constructor
+    Point(const Point& pt); //Copy constructor
 
     //Getter functions
     float GetX();

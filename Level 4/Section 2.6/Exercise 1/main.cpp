@@ -1,6 +1,6 @@
 /*
     Author: Ian Meyer
-    Description: Testing the new operators
+    Description: Testing the namespaces
 */
 
 #include "point.hpp"
@@ -10,7 +10,6 @@
 #include <iostream>
 
 
-//Namespace needs to be defined outside of main
 
 
 
@@ -22,11 +21,11 @@ int main(void){
     IanMeyer::CAD::Line ln(pt1, pt2);
 
 
+    //Aliasing
     namespace CircleCAD = IanMeyer::CAD ;   
     CircleCAD::Circle circ(pt1, 5);
 
 
-    // std::cout << IanMeyer::Containers.Array() << std::endl;
 
     return 0;
 

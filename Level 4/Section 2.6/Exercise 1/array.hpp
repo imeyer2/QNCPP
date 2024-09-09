@@ -1,3 +1,7 @@
+/*
+    Author: Ian Meyer
+    Description: Header file for the array class
+*/
 #ifndef ARRAY_H
 #define ARRAY_H
 
