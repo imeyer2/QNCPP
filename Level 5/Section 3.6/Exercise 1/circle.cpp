@@ -1,0 +1,119 @@
+/*
+    Author: Ian Meyer
+    Description: Implementation of the Circle class
+*/
+
+#include "circle.hpp"
+#include "point.hpp" //Ohhhh I see why we need the preprocessor directives now to avoid multiple inclusion....
+#include "line.hpp"
+#include <iostream>
+#include <sstream>
+
+#define _USE_MATH_DEFINES
+
+namespace IanMeyer::CAD{
+
+/******** CONSTRUCTORS ********/
+/******** CONSTRUCTORS ********/
+/******** CONSTRUCTORS ********/
+
+//Initializes a circle with radius 0 and center point (0,0)
+Circle::Circle() : Shape::Shape(), m_radius(0), center_point(Point(0,0)) {};
+
+//Parameterized constructor
+Circle::Circle(Point center, float radius) : Shape::Shape(), m_radius(radius), center_point(center) {};
+
+//Copy constructor
+Circle::Circle(const Circle& circ) : Shape::Shape(circ), m_radius(circ.m_radius), center_point(circ.center_point) {};
+/******** /CONSTRUCTORS ********/
+/******** /CONSTRUCTORS ********/
+/******** /CONSTRUCTORS ********/
+
+
+
+//Getters
+Point Circle::CenterPoint() const {
+    return center_point;
+};
+
+float Circle::Radius() const {
+    return m_radius;
+};
+
+//Setters
+void Circle::CenterPoint(Point center){
+    center_point = center;
+};
+
+void Circle::Radius(float new_radius) {
+    m_radius = new_radius;
+};
+
+float Circle::Diameter() {
+    return 2*m_radius;
+};
+
+float Circle::Area() {
+    return M_PI*std::pow(m_radius,2);
+};
+
+float Circle::Circumference() {
+    return 2*M_PI*m_radius;
+};
+
+
+std::string Circle::ToString() const {
+    std::string s=Shape::ToString();
+    std::stringstream ss;
+    ss << "This circle has center " << center_point.ToString() << " and radius " << m_radius << ". " << s << std::endl;
+    return ss.str();
+};
+
+
+//Operator
+
+//Assignment
+Circle& Circle::operator = (const Circle& source){
+    //Self assignment
+    if (this == &source) {
+        return *this;
+    };
+
+    //Else
+
+    //Call base class operator
+    Shape::operator=(source);
+
+    //Copy over Circle specific variables
+    CenterPoint(source.CenterPoint());
+    Radius(source.Radius());
+
+    return *this;
+};
+
+
+Circle::~Circle() {
+    std::cout << "Destroying the circle :(" << std::endl;
+
+    //Destroying the center point
+    center_point.~Point();
+    
+};
+
+
+
+
+//Overloading the << operator
+
+std::ostream& operator << (std::ostream& os, const Circle& circ) {
+    os << circ.ToString(); //the object has type qualifiers that are not compatible with the member function "Circle::ToString
+    //The error message in the comment above is a result of the fact, that when I wrote this, the ToString method for circle is not const, so the compiler doesn't know if the .ToString method will edit the circle object, which is SHOULD NOT do (this is why it has const in the prototype)
+    // The fix is to make the circ.ToString() function a constant method
+
+    return os;
+};
+
+void Circle::Draw() const {
+    std::cout << "Circle draw" << std::endl;
+}
+}
