@@ -23,7 +23,7 @@ Shape(const Shape& sh);
 Shape& operator = (const Shape& sh);
 
 
-//Functions
+//Functions, note that virtual appears here but not in .cpp, it was throwing an error when doing both..
 virtual std::string ToString() const; 
 int ID();
 

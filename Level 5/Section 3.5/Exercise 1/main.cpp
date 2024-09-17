@@ -1,6 +1,6 @@
 /*
     Author: Ian Meyer
-    Description: Testing the namespaces
+    Description: ToString polymorphism
 */
 
 #include "point.hpp"
@@ -46,5 +46,7 @@ int main(void){
     //Note, p2 << operator has an endline so it looks strange in the terminal.
     cout<< p2 << ", " << p2.ID() <<endl; // Is the ID copied if you do not call the base class assignment in point? It is
     return 0;
+
+    // Initially when it wasn't virtual, it wasn't working, but now it works with pointers
 
 };

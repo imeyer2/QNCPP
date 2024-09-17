@@ -26,7 +26,7 @@ Shape& Shape::operator = (const Shape& sh) {
     return *this;
 };
 
-//Need virtual keyword
+//Need virtual keyword ONLY IN .hpp FILE !!
 std::string Shape::ToString(){
     std::stringstream ss;
     ss << "ID: " << m_id;

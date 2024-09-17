@@ -47,6 +47,6 @@ void Shape::Draw() const {};
 
 
 void Shape::Print() const {
-    std::cout << ToString()<<  std::endl;
+    std::cout << ToString() <<  std::endl;
 }
 

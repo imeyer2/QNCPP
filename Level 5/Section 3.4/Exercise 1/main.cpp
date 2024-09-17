@@ -1,6 +1,6 @@
 /*
     Author: Ian Meyer
-    Description: Testing the namespaces
+    Description: Colon syntax
 */
 
 #include "point.hpp"

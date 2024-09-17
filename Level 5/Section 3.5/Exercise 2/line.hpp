@@ -22,7 +22,7 @@ public:
 
     //Constructors
     Line();
-    Line(Point npt1, Point npt2);
+    Line(Point& npt1, Point& npt2);
     Line(const Line& ln); //Remember to use call by reference
 
     //Getters

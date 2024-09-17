@@ -22,7 +22,7 @@ Line::Line() : Shape::Shape(), pt1(Point(0)), pt2(Point(0)) {
 }
 
 //Parameterized constructor with colon syntax
-Line::Line(Point npt1, Point npt2) : Shape::Shape(), pt1(npt1), pt2(npt2){
+Line::Line(Point& npt1, Point& npt2) : Shape::Shape(), pt1(npt1), pt2(npt2){
     std::cout << "Parameterized line constructor" << std::endl;
 };
 

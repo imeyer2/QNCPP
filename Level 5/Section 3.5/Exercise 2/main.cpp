@@ -19,7 +19,9 @@ int main(void){
 
     Shape s; // Create shape.
     Point p(10, 20); // Create point.
-    Line l(Point(1,2), Point(3, 4)); // Create line.
+    Point pp1(1,2);
+    Point pp2(3,4);
+    Line l(pp1, pp2); // Create line.
 
     cout<<s.ToString()<<endl; // Print shape.
     cout<<p.ToString()<<endl; // Print point.

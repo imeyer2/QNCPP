@@ -130,8 +130,8 @@ inline void Point::Y(float y) {
 std::string Point::ToString() const {
     std::string s=Shape::ToString();
     std::stringstream ss; //Looked up documentation for stringstream
-    ss << "Point(" << X() << ", " << Y() << ") " << s;
-    return ss.str(); //Return the string
+    ss << "Point(" << X() << ", " << Y() << ") " << s; //CONCATENATION OCCURS HERE
+    return ss.str(); 
 };
 
 
